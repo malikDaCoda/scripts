@@ -8,6 +8,6 @@ which bat >/dev/null || { echo "Install bat from : https://github.com/sharkdp/ba
 
 old_theme=$(cat "$SAVE_FILE" 2>/dev/null)
 theme="$(grep -G -v "^$old_theme$" "$THEMES_LIST" | shuf -n1)"
-echo "$theme" > "$SAVE_FILE"
+echo "$theme" >"$SAVE_FILE"
 
 bat --theme "$theme" "$@"
