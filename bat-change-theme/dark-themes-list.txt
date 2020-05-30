@@ -1,0 +1,11 @@
+1337
+DarkNeon
+Monokai Extended
+Monokai Extended Bright
+Monokai Extended Origin
+OneHalfDark
+Sublime Snazzy
+TwoDark
+ansi-dark
+base16
+zenburn
