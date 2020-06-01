@@ -16,7 +16,7 @@ set_background() {
   [ -f "$1" ] && gsettings set org.gnome.desktop.background picture-uri "file://"$1""
 }
 
-if [ "$1" == '-h' -o "$1" == '--help' ]; then
+if [ "$1" = '-h' -o "$1" = '--help' ]; then
   echo "\
 Change background wallpaper when a window is closed.
 
@@ -32,7 +32,7 @@ fi
 which wmctrl >/dev/null || exit 1
 
 load_images
-[ "$IMGS" ] || { echo "$0: no images loaded" >&2 && exit 1; }
+[ "${IMGS[*]}" ] || { echo "$0: no images loaded" >&2; exit 1; }
 
 set_background "${IMGS[0]}"
 i=0

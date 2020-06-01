@@ -31,7 +31,8 @@ Options:
 exit $1
 }
 
-# sleep time in seconds before listing wifis or connecting to one when the wifi has just been turned on
+# sleep time in seconds before listing wifis or connecting to one 
+# when the wifi has just been turned on
 SLEEP_TIME=3.2 
 
 which nmcli >/dev/null || exit 1
